@@ -1,35 +1,153 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
 	<base target="frame_Main">
-<title>Untitled Document</title>
-<style type="text/css">
-body {
-    background-color: #DAE966;
+    <meta charset="UTF-8">
+    <title>Mục Lục</title>
+    <style>
+      body {
+    background: linear-gradient(180deg, #3f8edc 0%, #2c6eb8 100%);
+    font-family: 'Segoe UI', sans-serif;
 }
-</style>
-</head>
 
+/* Khung menu */
+.sidebar {
+    background: linear-gradient(180deg, #2d5f9f 0%, #234d81 100%);
+    border-radius: 0 15px 15px 0;
+    box-shadow: 3px 0 15px rgba(0,0,0,0.15);
+}
+
+/* MỤC LỤC */
+.sidebar-title {
+    text-align: center;
+    color: #fff;
+    font-size: 28px;
+    font-weight: 700;
+    padding: 20px 10px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid rgba(255,255,255,0.3);
+    letter-spacing: 3px;
+}
+
+/* Các nút chính */
+.section-header {
+    background: linear-gradient(135deg, #5ba6f0, #3f8edc);
+    color: white;
+    padding: 14px;
+    border-radius: 12px;
+    font-weight: 600;
+    text-align: center;
+    transition: 0.3s;
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+.section-header:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(63,142,220,0.4);
+}
+
+/* Danh sách bài */
+.menu-items a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 6px 0;
+    padding: 12px 15px;
+    color: white;
+    text-decoration: none;
+    background: rgba(255,255,255,0.08);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.menu-items a:hover {
+    background: rgba(255,255,255,0.18);
+    padding-left: 25px;
+}
+
+/* Số thứ tự */
+.menu-items .num {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: white;
+    color: #2d5f9f;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Khối nổi bật */
+.basic-lessons {
+    background: linear-gradient(135deg, #69b4ff, #3f8edc);
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(63,142,220,0.3);
+}
+    </style>
+</head>
 <body>
-	<h3>Bài tập 1</h3>
-	<ul>
+	 <div class="sidebar-title">📚 MỤC LỤC</div>
+    
+   <div class="basic-lessons">
+    <div class="section-header" onclick="toggleMenu('menu1')">
+        📖 Bài Tập 1 ▼
+    </div>
+
+	<ul class="menu-items" id="menu1" style="display: none;">
 		<li><a href="Bai1/index.html">Bài 1</a></li>
 		<li><a href="Bai1_2_Excite/index.html">Bài 2</a></li>
 		<li><a href="Bai 1_3 _ Free_com/index.html">Bài 3</a></li>
 		<li><a href="Bai 1_4 _Scaal/index.html">Bài 4</a></li>
 		<li><a href="Bai 1_5 _ Phieu dang ky/index.html">Bài 5</a></li>
 	</ul>
-	<h3>Bài tập HTML</h3>
-	<ul>
-		<li><a href=HTML/tonghop.html>Bài tổng hợp</a></li>
-	</ul>
-	<h3>Bài tập 2</h3>
-	<ul>
+	 </div>  
+	<div class="menu-section">
+    <div class="section-header" onclick="toggleMenu('menu2')">
+        📖 Bài Tập HTML ▼
+    </div>
+
+    <ul class="menu-items" id="menu2" style="display: none;">
+        <li><a href="BaiTapHTML/HTML/BT1_Wellcome.html" target="frame_Main"><span class="num">1</span> Bài 1</a></li>
+            <li><a href="BaiTapHTML/HTML/BT2_Cohaimo.html" target="frame_Main"><span class="num">2</span> Có hai mơ</a></li>
+            <li><a href="BaiTapHTML/HTML/BT3_ChisoTrenduoi.html" target="frame_Main"><span class="num">3</span> Chỉ số trên/dưới</a></li>
+            <li><a href="BaiTapHTML/HTML/BT4_Kyhieudacbiet.html" target="frame_Main"><span class="num">4</span> Ký hiệu đặc biệt</a></li>
+            <li><a href="BaiTapHTML/HTML/BT5_Hieuungvb.html" target="frame_Main"><span class="num">5</span> Hiệu ứng văn bản</a></li>
+            <li><a href="BaiTapHTML/HTML/BT6_ChuongTrinhDTWeb1.html" target="frame_Main"><span class="num">6</span> CT Đào Tạo Web 1</a></li>
+            <li><a href="BaiTapHTML/HTML/BT7_ChuongTrinhDTWeb2.html" target="frame_Main"><span class="num">7</span> CT Đào Tạo Web 2</a></li>
+            <li><a href="BaiTapHTML/HTML/BT8_ChuongTrinhDTWed.html" target="frame_Main"><span class="num">8</span> CT Đào Tạo Web 3</a></li>
+            <li><a href="BaiTapHTML/HTML/BT9_ChuongTrinhDTTHVP.html" target="frame_Main"><span class="num">9</span> CT Đào Tạo THVP</a></li>
+            <li><a href="BaiTapHTML/HTML/BT10_TaisanBill.html" target="frame_Main"><span class="num">10</span> Tài sản Bill</a></li>
+            <li><a href="BaiTapHTML/HTML/Bai11_Nhacnen.html" target="frame_Main"><span class="num">11</span> Nhạc nền</a></li>
+            <li><a href="BaiTapHTML/HTML/BT12_ChuongTrinhDaoTao.html" target="frame_Main"><span class="num">12</span> Chương Trình Đào Tạo</a></li>
+            <li><a href="BaiTapHTML/HTML/BT13_DanhBaWeb.html" target="frame_Main"><span class="num">13</span> Danh Bạ Web</a></li>
+            <li><a href="BaiTapHTML/HTML/BT14_Albumnhac.html" target="frame_Main"><span class="num">14</span> Album Nhạc</a></li>
+            <li><a href="BaiTapHTML/HTML/BT15_KetQuaHocTap.html" target="frame_Main"><span class="num">15</span> Kết Quả Học Tập</a></li>
+    </ul>
+		
+</div><br>
+	<div class="menu-section">
+    <div class="section-header" onclick="toggleMenu('menu3')">
+        📖 Bài Tập 2 ▼
+    </div>
+	<ul class="menu-items" id="menu3" style="display: none;">
 		<li><a href="BAI_2_1/index.html">Bài 2_1</a></li>
 		<li><a href="bai2_2/index.html">Bài 2_2</a></li>
-		<li><a href="Bai 2.3 - CLB My Thuat/index.html">Bài 2_3</a></li>
+		<li><a href="Bai 2 - Thiet ke website voi AdobeDreamweaver/Bai 2.3 - CLB My Thuat/index.html">Bài 2_3</a></li>
 	</ul>
-	
+		</div>
+	<script>
+function toggleMenu(id) {
+    var menu = document.getElementById(id);
+
+    if (menu.style.display === "none") {
+        menu.style.display = "block";
+    } else {
+        menu.style.display = "none";
+    }
+}
+</script>
 </body>
 </html>
