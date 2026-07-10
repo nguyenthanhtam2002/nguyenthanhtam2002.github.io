@@ -1,0 +1,68 @@
+@charset "utf-8";
+
+/* Giúp cố định khung 1000px luôn ở giữa màn hình khi phóng to/thu nhỏ */
+.wrapper {
+    position: relative; 
+    width: 1000px;
+    margin: 0 auto; 
+}
+
+/* Đưa ảnh tem lớn làm nền cho cột trái để hàng gạch ngang bên dưới đè lên được */
+.nen-tem {
+    background-image: url("IMAGES/tem.jpg");
+    background-repeat: no-repeat;
+    background-size: 387px 432px;
+    background-position: left top;
+}
+
+/* --- Tọa độ chuẩn cho các ảnh nổi theo ảnh mẫu --- */
+.anh1 {
+    position: absolute;
+    left: 105px;  /* Đã căn chỉnh để đè lên vạch màu vàng */
+    top: 580px;   
+    z-index: 10;  
+}
+
+.anh2 {
+    position: absolute;
+    left: 350px; /* Con tem xéo góc */
+    top: 510px;
+    z-index: 11; 
+}
+
+.anh3 {
+    position: absolute;
+    left: 425px; /* Ảnh Happy Birthday */
+    top: 135px;
+    z-index: 12;
+}
+
+/* Nền gạch ngang */
+.gachngang {
+    background-image: url("IMAGES/socngang.gif");
+    background-repeat: repeat-x;
+    background-position: top;
+}
+
+/* --- TẠO 2 HÀNG CHẤM CÓ KHOẢNG TRỐNG CHỨA CHỮ Ở GIỮA --- */
+.cham {
+    border-top: 3px dotted #000000;    /* Hàng chấm phía trên chữ */
+    border-bottom: 3px dotted #000000; /* Hàng chấm phía dưới chữ */
+    padding: 6px 0;                    /* Khoảng cách từ chữ tới 2 hàng chấm */
+    display: inline-block;             /* Thu hẹp viền chấm vừa bằng chiều rộng chữ */
+    width: 100%;                        /* Hoặc chỉnh % theo độ dài bạn muốn */
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 2px;               /* Giãn cách các chữ ra nhìn cho giống mẫu */
+    color: #000000;
+}
+
+/* Menu dưới cùng */
+.menu-footer a {
+    color: #333399;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+}
