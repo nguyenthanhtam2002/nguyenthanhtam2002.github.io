@@ -1,0 +1,685 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<title>Đăng ký mua hoa</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<table
+    width="1030"
+    height="610"
+    border="0"
+    align="center"
+    cellpadding="0"
+    cellspacing="0"
+    id="Table_01"
+>
+    <tbody>
+
+        <!-- HÀNG ĐẦU -->
+        <tr>
+            <td width="185" height="161">
+                <img
+                    src="images/index_01.jpg"
+                    width="185"
+                    height="161"
+                    alt=""
+                >
+            </td>
+
+            <td width="628" height="161">
+                <img
+                    src="images/index_03.jpg"
+                    width="628"
+                    height="161"
+                    alt="Hoa cảnh"
+                >
+            </td>
+
+            <td width="217" height="161">
+                <img
+                    src="images/index_04.jpg"
+                    width="217"
+                    height="161"
+                    alt=""
+                >
+            </td>
+        </tr>
+
+        <!-- TRANG CHỦ -->
+        <tr>
+            <td width="185" height="39">
+                <a href="#">
+                    <img
+                        src="images/index_05.jpg"
+                        width="185"
+                        height="39"
+                        alt="Trang chủ"
+                    >
+                </a>
+            </td>
+
+            <!-- NỘI DUNG ĐĂNG KÝ -->
+            <td
+                width="628"
+                height="449"
+                rowspan="6"
+                align="left"
+                valign="top"
+                class="khung-vien-trai noi-dung noi-dung-dang-ky"
+            >
+
+                <table
+                    width="100%"
+                    border="0"
+                    cellspacing="0"
+                    cellpadding="0"
+                >
+                    <tbody>
+                        <tr>
+                            <td
+                                align="center"
+                                valign="middle"
+                                class="tieu-de"
+                            >
+                                ĐĂNG KÝ MUA HOA
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p class="huong-dan">
+                    Quý độc giả hãy điền đầy đủ các thông tin theo yêu cầu
+                    để nhận được sản phẩm hoa, cây cảnh ưa thích nhất.
+                </p>
+
+                <form
+                    id="formDangKy"
+                    name="formDangKy"
+                    method="post"
+                    action="#"
+                    novalidate
+                    onsubmit="return kiemTraDangKy();"
+                >
+
+                    <table
+                        width="100%"
+                        height="371"
+                        border="0"
+                        cellpadding="0"
+                        cellspacing="0"
+                        class="bang-dang-ky"
+                    >
+                        <tbody>
+
+                            <!-- HỌ VÀ TÊN -->
+                            <tr>
+                                <td
+                                    width="27%"
+                                    height="30"
+                                    align="right"
+                                    valign="middle"
+                                    class="cot-nhan"
+                                >
+                                    <label for="hoTen">
+                                        Họ và tên:
+                                    </label>
+                                </td>
+
+                                <td
+                                    width="73%"
+                                    align="left"
+                                    valign="middle"
+                                    class="cot-nhap"
+                                >
+                                    <input
+                                        type="text"
+                                        name="hoTen"
+                                        id="hoTen"
+                                        class="o-ho-ten"
+                                    >
+
+                                    <span class="ghi-chu">(*)</span>
+                                </td>
+                            </tr>
+
+                            <!-- ĐỊA CHỈ -->
+                            <tr>
+                                <td
+                                    height="30"
+                                    align="right"
+                                    valign="middle"
+                                    class="cot-nhan"
+                                >
+                                    <label for="diaChi">
+                                        Địa chỉ:
+                                    </label>
+                                </td>
+
+                                <td
+                                    align="left"
+                                    valign="middle"
+                                    class="cot-nhap"
+                                >
+                                    <input
+                                        type="text"
+                                        name="diaChi"
+                                        id="diaChi"
+                                        class="o-dia-chi"
+                                    >
+
+                                    <span class="ghi-chu">(*)</span>
+                                </td>
+                            </tr>
+
+                            <!-- ĐIỆN THOẠI -->
+                            <tr>
+                                <td
+                                    height="30"
+                                    align="right"
+                                    valign="middle"
+                                    class="cot-nhan"
+                                >
+                                    <label for="dienThoai">
+                                        Điện thoại:
+                                    </label>
+                                </td>
+
+                                <td
+                                    align="left"
+                                    valign="middle"
+                                    class="cot-nhap"
+                                >
+                                    <input
+                                        type="text"
+                                        name="dienThoai"
+                                        id="dienThoai"
+                                        class="o-dien-thoai"
+                                    >
+
+                                    <span class="ghi-chu">(*)</span>
+                                </td>
+                            </tr>
+
+                            <!-- EMAIL -->
+                            <tr>
+                                <td
+                                    height="30"
+                                    align="right"
+                                    valign="middle"
+                                    class="cot-nhan"
+                                >
+                                    <label for="email">
+                                        Email:
+                                    </label>
+                                </td>
+
+                                <td
+                                    align="left"
+                                    valign="middle"
+                                    class="cot-nhap"
+                                >
+                                    <input
+                                        type="text"
+                                        name="email"
+                                        id="email"
+                                        class="o-email"
+                                    >
+
+                                    <span class="ghi-chu">(*)</span>
+                                </td>
+                            </tr>
+
+                            <!-- LOẠI HOA -->
+                            <tr>
+                                <td
+                                    height="32"
+                                    align="right"
+                                    valign="middle"
+                                    class="cot-nhan"
+                                >
+                                    <label for="loaiHoa">
+                                        Loại hoa:
+                                    </label>
+                                </td>
+
+                                <td
+                                    align="left"
+                                    valign="middle"
+                                    class="cot-nhap"
+                                >
+                                    <select
+                                        name="loaiHoa"
+                                        id="loaiHoa"
+                                        class="o-loai-hoa"
+                                    >
+                                        <option>Hoa Hồng</option>
+                                        <option>Hoa Lay ơn</option>
+                                        <option>Hoa Cúc</option>
+                                        <option>Hoa Tulip</option>
+                                        <option selected>Hoa Thược dược</option>
+                                        <option>Hoa Vạn thọ</option>
+                                        <option>Mai vàng</option>
+                                    </select>
+
+                                    &nbsp;&nbsp;
+
+                                    <label for="mauHoa">
+                                        Màu:
+                                    </label>
+
+                                    <select
+                                        name="mauHoa"
+                                        id="mauHoa"
+                                        class="o-mau"
+                                    >
+                                        <option selected>Đỏ</option>
+                                        <option>Hồng</option>
+                                        <option>Trắng</option>
+                                        <option>Vàng</option>
+                                        <option>Tím</option>
+                                        <option>Cam</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <!-- SỐ LƯỢNG -->
+                            <tr>
+                                <td
+                                    height="32"
+                                    align="right"
+                                    valign="middle"
+                                    class="cot-nhan"
+                                >
+                                    <label for="soLuong">
+                                        Số lượng:
+                                    </label>
+                                </td>
+
+                                <td
+                                    align="left"
+                                    valign="middle"
+                                    class="cot-nhap"
+                                >
+                                    <input
+                                        type="text"
+                                        name="soLuong"
+                                        id="soLuong"
+                                        class="o-so-luong"
+                                    >
+
+                                    <span class="ghi-chu">(*)</span>
+                                </td>
+                            </tr>
+
+                            <!-- ĐƠN VỊ TÍNH -->
+                            <tr>
+                                <td
+                                    height="30"
+                                    align="right"
+                                    valign="middle"
+                                    class="cot-nhan"
+                                >
+                                    Đơn vị tính:
+                                </td>
+
+                                <td
+                                    align="left"
+                                    valign="middle"
+                                    class="cot-nhap"
+                                >
+                                    <input
+                                        type="radio"
+                                        name="donViTinh"
+                                        id="donViNhanh"
+                                        value="Nhánh"
+                                        checked
+                                    >
+                                    <label for="donViNhanh">
+                                        Nhánh
+                                    </label>
+
+                                    <input
+                                        type="radio"
+                                        name="donViTinh"
+                                        id="donViBo"
+                                        value="Bó"
+                                    >
+                                    <label for="donViBo">
+                                        Bó
+                                    </label>
+
+                                    <input
+                                        type="radio"
+                                        name="donViTinh"
+                                        id="donViChau"
+                                        value="Chậu"
+                                    >
+                                    <label for="donViChau">
+                                        Chậu
+                                    </label>
+                                </td>
+                            </tr>
+
+                            <!-- THANH TOÁN -->
+                            <tr>
+                                <td
+                                    height="30"
+                                    align="right"
+                                    valign="middle"
+                                    class="cot-nhan"
+                                >
+                                    Thanh toán:
+                                </td>
+
+                                <td
+                                    align="left"
+                                    valign="middle"
+                                    class="cot-nhap"
+                                >
+                                    <input
+                                        type="radio"
+                                        name="thanhToan"
+                                        id="tienMat"
+                                        value="Tiền mặt"
+                                        checked
+                                    >
+                                    <label for="tienMat">
+                                        Tiền mặt
+                                    </label>
+
+                                    <input
+                                        type="radio"
+                                        name="thanhToan"
+                                        id="chuyenKhoan"
+                                        value="Chuyển khoản"
+                                    >
+                                    <label for="chuyenKhoan">
+                                        Chuyển khoản
+                                    </label>
+
+                                    <input
+                                        type="radio"
+                                        name="thanhToan"
+                                        id="masterCard"
+                                        value="Master Card"
+                                    >
+                                    <label for="masterCard">
+                                        Master Card
+                                    </label>
+                                </td>
+                            </tr>
+
+                            <!-- YÊU CẦU -->
+                            <tr>
+                                <td
+                                    height="95"
+                                    align="right"
+                                    valign="top"
+                                    class="cot-nhan cot-yeu-cau"
+                                >
+                                    <label for="yeuCau">
+                                        Yêu cầu:
+                                    </label>
+                                </td>
+
+                                <td
+                                    align="left"
+                                    valign="middle"
+                                    class="cot-nhap"
+                                >
+                                    <textarea
+                                        name="yeuCau"
+                                        id="yeuCau"
+                                        class="o-yeu-cau"
+                                    ></textarea>
+                                </td>
+                            </tr>
+
+                            <!-- NÚT -->
+                            <tr>
+                                <td
+                                    height="34"
+                                    align="right"
+                                    valign="middle"
+                                >
+                                    &nbsp;
+                                </td>
+
+                                <td
+                                    align="left"
+                                    valign="middle"
+                                    class="cot-nhap"
+                                >
+                                    <input
+                                        type="submit"
+                                        name="submit"
+                                        id="submit"
+                                        value="Đăng ký"
+                                        class="nut-lenh"
+                                    >
+
+                                    <input
+                                        type="button"
+                                        name="reset"
+                                        id="reset"
+                                        value="Xóa thông tin"
+                                        class="nut-lenh"
+                                        onclick="xoaThongTin();"
+                                    >
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </form>
+
+            </td>
+
+            <!-- ẢNH HOA BÊN PHẢI -->
+            <td
+                width="217"
+                height="449"
+                rowspan="6"
+            >
+                <img
+                    src="images/index_07.jpg"
+                    width="217"
+                    height="449"
+                    alt="Hoa trang trí"
+                >
+            </td>
+        </tr>
+
+        <!-- TIN TỨC -->
+        <tr>
+            <td width="185" height="42">
+                <a href="#">
+                    <img
+                        src="images/index_08.jpg"
+                        width="185"
+                        height="42"
+                        alt="Tin tức"
+                    >
+                </a>
+            </td>
+        </tr>
+
+        <!-- HỘP THƯ -->
+        <tr>
+            <td width="185" height="34">
+                <a href="#">
+                    <img
+                        src="images/index_09.jpg"
+                        width="185"
+                        height="34"
+                        alt="Hộp thư"
+                    >
+                </a>
+            </td>
+        </tr>
+
+        <!-- GÓC THƯ GIÃN -->
+        <tr>
+            <td width="185" height="44">
+                <a href="#">
+                    <img
+                        src="images/index_10.jpg"
+                        width="185"
+                        height="44"
+                        alt="Góc thư giãn"
+                    >
+                </a>
+            </td>
+        </tr>
+
+        <!-- HOA CÂY CẢNH -->
+        <tr>
+            <td width="185" height="39">
+                <a href="#">
+                    <img
+                        src="images/index_11.jpg"
+                        width="185"
+                        height="39"
+                        alt="Hoa cây cảnh"
+                    >
+                </a>
+            </td>
+        </tr>
+
+        <!-- HOA HỒNG -->
+        <tr>
+            <td width="185" height="251">
+                <img
+                    src="images/index_12.jpg"
+                    width="185"
+                    height="251"
+                    alt="Hoa hồng"
+                >
+            </td>
+        </tr>
+
+    </tbody>
+</table>
+
+<script>
+function xoaTrangThaiLoi() {
+    var danhSachO = document.querySelectorAll(
+        "#formDangKy input, #formDangKy select, #formDangKy textarea"
+    );
+
+    for (var i = 0; i < danhSachO.length; i++) {
+        danhSachO[i].classList.remove("input-loi");
+    }
+}
+
+function baoLoi(phanTu, thongBao) {
+    phanTu.classList.add("input-loi");
+    phanTu.focus();
+    alert(thongBao);
+    return false;
+}
+
+function emailHopLe(email) {
+    var mauEmail =
+        /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+    return mauEmail.test(email);
+}
+
+function kiemTraDangKy() {
+    xoaTrangThaiLoi();
+
+    var hoTen = document.getElementById("hoTen");
+    var diaChi = document.getElementById("diaChi");
+    var dienThoai = document.getElementById("dienThoai");
+    var email = document.getElementById("email");
+    var soLuong = document.getElementById("soLuong");
+
+    if (hoTen.value.trim() === "") {
+        return baoLoi(
+            hoTen,
+            "Vui lòng nhập họ và tên."
+        );
+    }
+
+    if (diaChi.value.trim() === "") {
+        return baoLoi(
+            diaChi,
+            "Vui lòng nhập địa chỉ."
+        );
+    }
+
+    if (dienThoai.value.trim() === "") {
+        return baoLoi(
+            dienThoai,
+            "Vui lòng nhập số điện thoại."
+        );
+    }
+
+    var mauDienThoai = /^[0-9+\s().-]+$/;
+
+    if (!mauDienThoai.test(dienThoai.value.trim())) {
+        return baoLoi(
+            dienThoai,
+            "Số điện thoại không hợp lệ."
+        );
+    }
+
+    if (email.value.trim() === "") {
+        return baoLoi(
+            email,
+            "Vui lòng nhập địa chỉ email."
+        );
+    }
+
+    if (!emailHopLe(email.value.trim())) {
+        return baoLoi(
+            email,
+            "Địa chỉ email không đúng định dạng."
+        );
+    }
+
+    if (soLuong.value.trim() === "") {
+        return baoLoi(
+            soLuong,
+            "Vui lòng nhập số lượng."
+        );
+    }
+
+    var giaTriSoLuong = Number(soLuong.value.trim());
+
+    if (
+        isNaN(giaTriSoLuong) ||
+        giaTriSoLuong <= 0 ||
+        Math.floor(giaTriSoLuong) !== giaTriSoLuong
+    ) {
+        return baoLoi(
+            soLuong,
+            "Số lượng phải là số nguyên lớn hơn 0."
+        );
+    }
+
+    var dongY = confirm(
+        "Xác nhận đăng ký thông tin"
+    );
+
+    if (dongY) {
+        alert("Đăng ký thông tin thành công.");
+    }
+
+    return false;
+}
+
+function xoaThongTin() {
+    document.getElementById("formDangKy").reset();
+    xoaTrangThaiLoi();
+    document.getElementById("hoTen").focus();
+}
+</script>
+
+</body>
+</html>

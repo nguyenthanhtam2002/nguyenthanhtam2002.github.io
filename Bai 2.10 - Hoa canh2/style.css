@@ -1,0 +1,282 @@
+@charset "utf-8";
+
+/* =========================
+   THIẾT LẬP CHUNG
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-width: 1030px;
+    background-color: #ffffff;
+    font-family: Tahoma, Arial, sans-serif;
+}
+
+#Table_01 {
+    width: 1030px;
+    height: 610px;
+
+    margin: 0 auto;
+
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+#Table_01 td {
+    padding: 0;
+}
+
+img {
+    display: block;
+    border: 0;
+}
+
+a {
+    display: block;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+
+/* =========================
+   KHUNG VIỀN TRÁI
+========================= */
+
+/*
+    Đường gạch đặt trực tiếp vào ô nội dung.
+    Không tạo thêm cột 20px nên không còn khoảng trắng.
+*/
+.khung-vien-trai {
+    border-left-style: dashed;
+    border-left-width: thin;
+    border-left-color: #009966;
+}
+
+
+/* =========================
+   TIÊU ĐỀ
+========================= */
+
+.tieu-de {
+    height: 52px;
+    padding: 7px 0 12px !important;
+
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 32px;
+    color: #000000;
+    text-align: center;
+}
+
+
+/* =========================
+   NỘI DUNG
+========================= */
+
+.noi-dung {
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 11px;
+    color: #000000;
+}
+
+.noi-dung-dang-ky {
+    width: 628px;
+    height: 449px;
+
+    padding: 0 15px 0 12px !important;
+
+    vertical-align: top;
+    overflow: hidden;
+}
+
+.huong-dan {
+    margin: 0;
+    padding: 0 0 12px 0;
+
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 11px;
+    line-height: 15px;
+    color: #000000;
+}
+
+
+/* =========================
+   GHI CHÚ
+========================= */
+
+.ghi-chu {
+    margin-left: 3px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    color: #ff0000;
+}
+
+
+/* =========================
+   BẢNG FORM
+========================= */
+
+.bang-dang-ky {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.bang-dang-ky td {
+    padding: 2px 4px !important;
+
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 11px;
+    color: #000000;
+}
+
+.cot-nhan {
+    padding-right: 8px !important;
+    text-align: right;
+    white-space: nowrap;
+}
+
+.cot-nhap {
+    text-align: left;
+}
+
+.cot-yeu-cau {
+    padding-top: 6px !important;
+}
+
+
+/* =========================
+   Ô NHẬP
+========================= */
+
+input[type="text"],
+select,
+textarea {
+    border: 1px solid #8ca4bd;
+    background-color: #ffffff;
+
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 11px;
+    color: #000000;
+
+    outline: none;
+}
+
+input[type="text"],
+select {
+    height: 22px;
+    padding: 2px 4px;
+}
+
+textarea {
+    padding: 5px;
+}
+
+input[type="text"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #4c82ac;
+}
+
+
+/* Kích thước từng ô */
+
+.o-ho-ten {
+    width: 330px;
+}
+
+.o-dia-chi {
+    width: 400px;
+}
+
+.o-dien-thoai {
+    width: 190px;
+}
+
+.o-email {
+    width: 260px;
+}
+
+.o-so-luong {
+    width: 110px;
+}
+
+.o-loai-hoa {
+    width: 140px;
+}
+
+.o-mau {
+    width: 90px;
+}
+
+.o-yeu-cau {
+    width: 400px;
+    height: 92px;
+    resize: none;
+}
+
+
+/* =========================
+   RADIO
+========================= */
+
+input[type="radio"] {
+    margin: 0 3px 0 8px;
+    vertical-align: middle;
+}
+
+input[type="radio"]:first-child {
+    margin-left: 0;
+}
+
+label {
+    vertical-align: middle;
+}
+
+
+/* =========================
+   NÚT LỆNH
+========================= */
+
+.nut-lenh {
+    min-width: 105px;
+    height: 25px;
+
+    margin-right: 8px;
+    padding: 2px 12px;
+
+    border: 1px solid #56738d;
+    border-radius: 3px;
+
+    background-color: #f2f2f2;
+
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 11px;
+    color: #000000;
+
+    cursor: pointer;
+}
+
+.nut-lenh:hover {
+    background-color: #ddebf3;
+}
+
+
+/* =========================
+   BÁO LỖI
+========================= */
+
+.input-loi {
+    border: 1px solid #ff0000 !important;
+    background-color: #fff2f2 !important;
+}
